@@ -7,6 +7,12 @@
   src: url("../assets/fonts/Barlow/Barlow-Black.ttf");
 }
 
+@font-face {
+  font-family: Fraunces;
+  src: url("../assets/fonts/Fraunces/static/Fraunces/Fraunces-Black.ttf");
+  font-weight: normal;
+}
+
 nav#navbar {
   background-color: #3DBEFF;
 }
