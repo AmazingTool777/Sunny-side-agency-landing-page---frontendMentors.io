@@ -2,6 +2,10 @@
   list-style: none;
 }
 
+nav#navbar {
+  background-color: #3DBEFF;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
