@@ -22,6 +22,7 @@ nav#navbar .wrapper {
         border: none;
         background-color: transparent;
         outline: none;
+        cursor: pointer;
     }
 
     #navbar-links {
@@ -89,6 +90,69 @@ nav#navbar .wrapper {
         color: $very-dark-grayish-blue;
     }
 }
+
+
+@media screen and (min-width: 992px) {
+    nav#navbar {
+        height: auto;
+        padding: 1.5em 0;
+    }
+
+    nav#navbar .wrapper {
+        padding: 0 2em;
+
+        #navbar-toggler {
+            display: none;
+        }
+
+        #navbar-links {
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: fit-content;
+            position: static;
+            margin: 0;
+            padding: 0;
+
+            &.show {
+                display: flex;
+                animation: none;
+            }
+
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    #navbar-links li a {
+        padding: 0 1.2em;
+        color: #fff;
+
+        &:not(#to-contacts) {
+            color: #fff;
+            font-weight: normal;
+        }
+
+        &#to-contacts {
+            margin-top: 0;
+            margin-left: 1.2em;
+            padding: 1em 1.5em;
+            background-color: #fff;
+
+            &:hover {
+                color: #fff;
+                background-color: #6CD0FF;
+            }
+        }
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}
+
 
 // Fade-in animation
 @keyframes fade-in {

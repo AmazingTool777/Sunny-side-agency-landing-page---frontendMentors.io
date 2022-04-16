@@ -53,6 +53,7 @@ nav#navbar .wrapper #navbar-toggler {
   border: none;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 nav#navbar .wrapper #navbar-links {
@@ -128,6 +129,69 @@ nav#navbar .wrapper #navbar-links::before {
 
 #navbar-links li a:hover {
   color: #5a636c;
+}
+
+@media screen and (min-width: 992px) {
+  nav#navbar {
+    height: auto;
+    padding: 1.5em 0;
+  }
+  nav#navbar .wrapper {
+    padding: 0 2em;
+  }
+  nav#navbar .wrapper #navbar-toggler {
+    display: none;
+  }
+  nav#navbar .wrapper #navbar-links {
+    background-color: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: static;
+    margin: 0;
+    padding: 0;
+  }
+  nav#navbar .wrapper #navbar-links.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: none;
+            animation: none;
+  }
+  nav#navbar .wrapper #navbar-links::before {
+    content: none;
+  }
+  #navbar-links li a {
+    padding: 0 1.2em;
+    color: #fff;
+  }
+  #navbar-links li a:not(#to-contacts) {
+    color: #fff;
+    font-weight: normal;
+  }
+  #navbar-links li a#to-contacts {
+    margin-top: 0;
+    margin-left: 1.2em;
+    padding: 1em 1.5em;
+    background-color: #fff;
+  }
+  #navbar-links li a#to-contacts:hover {
+    color: #fff;
+    background-color: #6CD0FF;
+  }
+  #navbar-links li a:hover {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 @-webkit-keyframes fade-in {
