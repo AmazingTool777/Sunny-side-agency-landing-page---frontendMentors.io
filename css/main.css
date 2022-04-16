@@ -2,6 +2,11 @@
   list-style: none;
 }
 
+@font-face {
+  font-family: Barlow;
+  src: url("../assets/fonts/Barlow/Barlow-Black.ttf");
+}
+
 nav#navbar {
   background-color: #3DBEFF;
 }
