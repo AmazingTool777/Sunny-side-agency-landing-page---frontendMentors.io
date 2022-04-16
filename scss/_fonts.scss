@@ -1,9 +1,17 @@
 // Barlow ********************************************************************
 
-// Regular
+// Regular - Normal
 @font-face {
     font-family: Barlow;
-    src: url("../assets/fonts/Barlow/Barlow-Black.ttf");
+    src: url("../assets/fonts/Barlow/Barlow-Regular.ttf");
+    font-weight: normal;
+}
+
+// Regular - fw-600
+@font-face {
+    font-family: Barlow;
+    src: url("../assets/fonts/Barlow/Barlow-SemiBold.ttf");
+    font-weight: 600;
 }
 
 
@@ -12,6 +20,6 @@
 // Regular
 @font-face {
     font-family: Fraunces;
-    src: url("../assets/fonts/Fraunces/static/Fraunces/Fraunces-Black.ttf");
+    src: url("../assets/fonts/Fraunces/static/Fraunces/Fraunces-Regular.ttf");
     font-weight: normal;
 }

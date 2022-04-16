@@ -1,3 +1,104 @@
+@import "colors";
+
 nav#navbar {
     background-color: #3DBEFF;
+    width: 100vw;
+    height: 80px;
+    padding: 0 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav#navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+
+    #navbar-toggler {
+        border: none;
+        background-color: transparent;
+        outline: none;
+    }
+
+    #navbar-links {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 1em;
+        margin-top: 1em;
+        // box-shadow: 0 2px 4px #ddd;
+        display: none;
+
+        &.show {
+            display: block;
+            animation: fade-in 0.3s;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            width: 1em;
+            height: 1em;
+            position: absolute;
+            bottom: 100%;
+            right: 0;
+            clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+            background-color: inherit;
+        }
+    }
+}
+
+#navbar-links li a {
+    font-family: Barlow;
+    font-weight: 600;
+    padding: 1em 0;
+    transition: 0.3s;
+    display: block;
+
+    &:not(#to-contacts) {
+        text-align: center;
+        color: $dark-grayish-blue;
+    }
+
+    &#to-contacts {
+        width: fit-content;
+        margin: 0.5em auto 0;
+        padding: 1em 1.5em;
+        color: $very-dark-desaturated-blue;
+        text-transform: uppercase;
+        font-family: Fraunces;
+        font-size: 1rem;
+        border-radius: 1.5em;
+        background-color: $yellow;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: darken($yellow, 5%);
+        }
+    }
+
+    &:hover {
+        color: $very-dark-grayish-blue;
+    }
+}
+
+// Fade-in animation
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-1em);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
