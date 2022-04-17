@@ -1,4 +1,4 @@
-section#intro {
+header#intro {
     background-image: url("../assets/images/mobile/image-header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,7 +14,7 @@ section#intro {
     }
 }
 
-section#intro .wrapper {
+header#intro .wrapper {
     h1 {
         font-family: Fraunces;
         font-weight: bold;
@@ -43,7 +43,7 @@ section#intro .wrapper {
 
 
 @media screen and (min-width: 768px) {
-    section#intro .wrapper {
+    header#intro .wrapper {
         h1 {
             font-size: 2.3em;
         }
@@ -52,7 +52,7 @@ section#intro .wrapper {
 
 
 @media screen and (min-width: 992px) {
-    section#intro {
+    header#intro {
         background-image: url("../assets/images/desktop/image-header.jpg");
 
         .wrapper {
@@ -60,7 +60,7 @@ section#intro .wrapper {
         }
     }
 
-    section#intro .wrapper {
+    header#intro .wrapper {
         h1 {
             font-size: 3em;
         }

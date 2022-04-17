@@ -226,14 +226,14 @@ nav#navbar .wrapper #navbar-links::before {
   }
 }
 
-section#intro {
+header#intro {
   background-image: url("../assets/images/mobile/image-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
-section#intro .wrapper {
+header#intro .wrapper {
   width: 100%;
   min-height: 75vh;
   display: -webkit-box;
@@ -251,7 +251,7 @@ section#intro .wrapper {
           flex-direction: column;
 }
 
-section#intro .wrapper h1 {
+header#intro .wrapper h1 {
   font-family: Fraunces;
   font-weight: bold;
   font-size: 2em;
@@ -261,13 +261,13 @@ section#intro .wrapper h1 {
   text-align: center;
 }
 
-section#intro .wrapper a#scroll-to-content {
+header#intro .wrapper a#scroll-to-content {
   margin-top: 2.5em;
   display: block;
   text-decoration: none;
 }
 
-section#intro .wrapper a#scroll-to-content svg {
+header#intro .wrapper a#scroll-to-content svg {
   -webkit-animation-name: bounce;
           animation-name: bounce;
   -webkit-animation-duration: 1.5s;
@@ -283,22 +283,22 @@ section#intro .wrapper a#scroll-to-content svg {
 }
 
 @media screen and (min-width: 768px) {
-  section#intro .wrapper h1 {
+  header#intro .wrapper h1 {
     font-size: 2.3em;
   }
 }
 
 @media screen and (min-width: 992px) {
-  section#intro {
+  header#intro {
     background-image: url("../assets/images/desktop/image-header.jpg");
   }
-  section#intro .wrapper {
+  header#intro .wrapper {
     min-height: 100vh;
   }
-  section#intro .wrapper h1 {
+  header#intro .wrapper h1 {
     font-size: 3em;
   }
-  section#intro .wrapper a#scroll-to-content {
+  header#intro .wrapper a#scroll-to-content {
     margin-top: 3.5em;
   }
 }
