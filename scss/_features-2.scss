@@ -1,0 +1,73 @@
+@import "colors";
+
+#features-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'graphic-design' 'photography';
+
+    article {
+        width: 100%;
+        position: relative;
+
+        .features-2-illustration {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &.graphic-design {
+        grid-area: graphic-design;
+    }
+
+    &.photography {
+        grid-area: photography;
+    }
+}
+
+#features-2 article {
+    &.graphic-design .content > * {
+        color: $dark-desaturated-cyan;
+    }
+
+    &.photography .content > * {
+        color: $dark-blue;
+    }
+    
+    .content {
+        position: absolute;
+        height: 50%;
+        width: 100%;
+        max-width: 380px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        h3 {
+            font-size: 1.8rem;
+            font-family: Fraunces;
+            font-weight: 900;
+            margin-bottom: 2rem;
+        }
+    
+        p {
+            font-size: 1rem;
+            font-family: Barlow;
+            font-weight: 600;
+            padding: 0 0.8rem;
+            line-height: 1.7rem;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #features-2 {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: 'graphic-design photography';
+    }
+}
