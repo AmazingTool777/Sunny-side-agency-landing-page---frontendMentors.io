@@ -30,3 +30,10 @@
     src: url("../assets/fonts/Fraunces/static/Fraunces/Fraunces-Bold.ttf");
     font-weight: bold;
 }
+
+// Extra-bold
+@font-face {
+    font-family: Fraunces;
+    src: url("../assets/fonts/Fraunces/static/Fraunces/Fraunces-ExtraBold.ttf");
+    font-weight: 900;
+}
