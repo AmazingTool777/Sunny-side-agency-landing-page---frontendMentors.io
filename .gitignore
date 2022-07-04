@@ -1,5 +1,6 @@
 # Stater files
-/assets/staters
+assets/staters
 
 # Custom fonts
-/assets/fonts
+assets/fonts/*
+!assets/fonts/icomoon/
