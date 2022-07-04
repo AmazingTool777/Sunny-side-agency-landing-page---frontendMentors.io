@@ -127,12 +127,18 @@ nav#navbar .wrapper #navbar-links {
   padding: 1em;
   margin-top: 1em;
   display: none;
+  -webkit-box-shadow: 0 2px 4px #ddd;
+          box-shadow: 0 2px 4px #ddd;
 }
 
 nav#navbar .wrapper #navbar-links.show {
-  display: block;
   -webkit-animation: fade-in 0.3s;
           animation: fade-in 0.3s;
+}
+
+nav#navbar .wrapper #navbar-links.close {
+  -webkit-animation: fade-out 0.3s;
+          animation: fade-out 0.3s;
 }
 
 nav#navbar .wrapper #navbar-links::before {
@@ -215,6 +221,8 @@ nav#navbar .wrapper #navbar-links::before {
     position: static;
     margin: 0;
     padding: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   nav#navbar .wrapper #navbar-links.show {
     display: -webkit-box;
@@ -272,6 +280,32 @@ nav#navbar .wrapper #navbar-links::before {
     opacity: 1;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
   }
 }
 
