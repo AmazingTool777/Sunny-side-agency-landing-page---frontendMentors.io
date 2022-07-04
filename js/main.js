@@ -23,3 +23,12 @@ function handleNavbarToggle() {
 
 // Show/Hide of the navbar links
 navbarToggler.addEventListener("click", handleNavbarToggle);
+
+/* *********************************************************************** */
+
+const scrollToContent = document.getElementById("scroll-to-content");
+const features1 = document.getElementById("features-1");
+
+scrollToContent.onclick = () => {
+    features1.scrollIntoView({ behavior: "smooth" });
+}

@@ -344,13 +344,14 @@ header#intro .wrapper h1 {
   text-align: center;
 }
 
-header#intro .wrapper a#scroll-to-content {
+header#intro .wrapper #scroll-to-content {
   margin-top: 2.5em;
   display: block;
   text-decoration: none;
+  cursor: pointer;
 }
 
-header#intro .wrapper a#scroll-to-content svg {
+header#intro .wrapper #scroll-to-content svg {
   -webkit-animation-name: bounce;
           animation-name: bounce;
   -webkit-animation-duration: 1.5s;
@@ -363,6 +364,13 @@ header#intro .wrapper a#scroll-to-content svg {
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+header#intro .wrapper #scroll-to-content svg:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 @media screen and (min-width: 768px) {
