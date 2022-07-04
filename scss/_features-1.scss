@@ -20,6 +20,8 @@ section#features-1 article {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 37.5rem; // 600px
+        margin: 0 auto;
     }
 }
 
