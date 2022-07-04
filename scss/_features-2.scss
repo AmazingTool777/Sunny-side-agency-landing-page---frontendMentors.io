@@ -16,11 +16,11 @@
         }
     }
 
-    &.graphic-design {
+    & > *.graphic-design {
         grid-area: graphic-design;
     }
 
-    &.photography {
+    & > *.photography {
         grid-area: photography;
     }
 }
