@@ -1,0 +1,115 @@
+@import "colors";
+
+section#testimonials {
+    padding: 4rem 1.5rem;
+    text-align: center;
+
+    h2 {
+        font-family: Fraunces;
+        font-weight: 900;
+        font-size: 1rem;
+        color: $grayish-blue;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        margin-bottom: 4rem;
+    }
+
+    ul.testimonials-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+section#testimonials ul.testimonials-list li.testimonials-list-item {
+    display: block;
+    margin-bottom: 4rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        display: inline-block;
+        width: 70px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+    
+    p.quote {
+        font-size: 1.1rem;
+        font-family: Barlow;
+        font-weight: 600;
+        line-height: 2rem;
+        color: $very-dark-grayish-blue;
+        margin-bottom: 2rem;
+    }
+
+    p.author > * {
+        display: block;
+    }
+
+    .author-name {
+        font-family: Fraunces;
+        font-weight: 900;
+        color: $very-dark-desaturated-blue;
+        margin-bottom: 0.6rem;
+    }
+
+    .author-position {
+        color: $grayish-blue;
+        font-size: 0.94rem;
+        font-family: Barlow;
+        font-weight: 600;
+        font-style: normal;
+        text-transform: capitalize;
+    }
+}
+
+@media screen and (min-width: 776px) {
+    section#testimonials {
+        padding: 6rem 1.5rem;
+    
+        ul.testimonials-list {
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    section#testimonials ul.testimonials-list li.testimonials-list-item {
+        width: 50%;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    section#testimonials {
+        padding: 8rem 2rem;
+    
+        h2 {
+            margin-bottom: 6rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.36rem;
+        }
+    
+        ul.testimonials-list {
+            flex-wrap: nowrap;
+            max-width: 1150px;
+        }
+    }
+
+    section#testimonials ul.testimonials-list li.testimonials-list-item {
+        margin-bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section#testimonials {
+        padding: 10rem 4rem;
+    }
+}
