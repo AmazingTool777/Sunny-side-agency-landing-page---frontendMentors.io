@@ -16,6 +16,7 @@
 @import "features-2";
 @import "testimonials";
 @import "gallery";
+@import "footer";
 
 
 // Resets and global styles *****************************************
@@ -35,4 +36,12 @@ html {
 
 body {
     font-size: 1.125rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }

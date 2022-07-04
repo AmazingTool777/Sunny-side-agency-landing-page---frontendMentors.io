@@ -7,6 +7,49 @@
 }
 
 @font-face {
+  font-family: 'icomoon';
+  src: url("../assets/fonts/icomoon/icomoon.eot?nk3hgn");
+  src: url("../assets/fonts/icomoon/icomoon.eot?nk3hgn#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon/icomoon.ttf?nk3hgn") format("truetype"), url("../assets/fonts/icomoon/icomoon.woff?nk3hgn") format("woff"), url("../assets/fonts/icomoon/icomoon.svg?nk3hgn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-facebook:before {
+  content: "\e900";
+  color: #25564b;
+}
+
+.icon-icon-instagram:before {
+  content: "\e901";
+  color: #25564b;
+}
+
+.icon-icon-pinterest:before {
+  content: "\e902";
+  color: #25564b;
+}
+
+.icon-icon-twitter:before {
+  content: "\e903";
+  color: #25564b;
+}
+
+@font-face {
   font-family: Barlow;
   src: url("../assets/fonts/Barlow/Barlow-Regular.ttf");
   font-weight: normal;
@@ -740,6 +783,80 @@ section#gallery > *:nth-child(4) {
   }
 }
 
+footer {
+  background-color: #8bc6ba;
+  padding: 4rem 2rem;
+}
+
+footer .footer_wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+footer .footer_wrapper > * {
+  width: 100%;
+}
+
+footer a.brand {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer a.brand img {
+  width: 10rem;
+}
+
+footer nav {
+  margin-bottom: 4rem;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer nav ul li a {
+  padding: 0 1rem;
+  font-family: Barlow;
+  font-weight: 600;
+  color: #25564b;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+footer nav ul li a:hover {
+  color: #fff;
+}
+
+footer aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer aside ul li a {
+  padding: 0 0.8rem;
+}
+
+footer aside ul li a i::before {
+  font-size: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #25564b;
+}
+
+footer aside ul li a i:hover::before {
+  color: #fff;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -757,5 +874,13 @@ html {
 
 body {
   font-size: 1.125rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
