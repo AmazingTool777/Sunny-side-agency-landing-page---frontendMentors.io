@@ -3,40 +3,9 @@
 
 // Barlow ********************************************************************
 
-// Regular - Normal
-@font-face {
-    font-family: Barlow;
-    src: url("../assets/fonts/Barlow/Barlow-Regular.ttf");
-    font-weight: normal;
-}
-
-// Regular - fw-600
-@font-face {
-    font-family: Barlow;
-    src: url("../assets/fonts/Barlow/Barlow-SemiBold.ttf");
-    font-weight: 600;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
 
 // Fraunces *****************************************************************
 
 // Regular
-@font-face {
-    font-family: Fraunces;
-    src: url("../assets/fonts/Fraunces/static/Fraunces/Fraunces-Regular.ttf");
-    font-weight: normal;
-}
-
-// Bold
-@font-face {
-    font-family: Fraunces;
-    src: url("../assets/fonts/Fraunces/static/Fraunces/Fraunces-Bold.ttf");
-    font-weight: bold;
-}
-
-// Extra-bold
-@font-face {
-    font-family: Fraunces;
-    src: url("../assets/fonts/Fraunces/static/Fraunces/Fraunces-ExtraBold.ttf");
-    font-weight: 900;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&display=swap");
