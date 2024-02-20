@@ -7,7 +7,7 @@ This is a solution to a junior level frontend project challenge titled "Sunnysid
 You can find the challenge here: https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef
 
 ### Site
-You can view the page here: https://tooltra.github.io/Sunny-side-agency-landing-page---frontendMentors.io/
+You can view the page here: https://LordSeven777.github.io/Sunny-side-agency-landing-page---frontendMentors.io/
 
 ## Approach
 This site was built with HTML, CSS, SCSS and Javascript.
